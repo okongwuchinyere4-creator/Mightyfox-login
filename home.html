@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard - Home</title>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Mightyfox Portal</div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <!-- Dark Mode Toggle Button -->
+            <li><button id="theme-toggle" class="toggle-btn">🌙 Dark Mode</button></li>
+            <li><a href="index.html" class="logout-btn">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="dashboard-container">
+        <header class="welcome-banner">
+            <!-- The ID here allows JavaScript to swap "User" with the logged-in name -->
+            <h1>Welcome Back, <span id="user-display">User</span>!</h1>
+            <p>Here is what is happening with your account today.</p>
+        </header>
+
+        <!-- Dynamic Content Grid Cards -->
+        <section class="card-grid">
+            <div class="card">
+                <h3>Recent Activity</h3>
+                <p>Logged in successfully from a new device.</p>
+            </div>
+            <div class="card">
+                <h3>Your Projects</h3>
+                <p>You have 1 active website currently deployed.</p>
+            </div>
+            <div class="card">
+                <h3>System Status</h3>
+                <p class="status-good">● All systems operational</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Link to our JavaScript logic file -->
+    <script src="script.js"></script>
+</body>
+</html>

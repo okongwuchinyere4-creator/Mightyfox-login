@@ -9,15 +9,20 @@
 </head>
 <body>
  <div class="login-wrapper">
-    <form action="" class="form">
+    <!-- Added id="loginForm" and removed action to handle it safely with JS -->
+    <form class="form" id="loginForm">
         <img src=avater.png alt="">
         <h2>Login</h2>
+        
+        <!-- Error message box container -->
+        <div id="error-message" class="error-box"></div>
+
         <div class="input-group">
-            <input type="text" name="loginUser" id="loginUser"> 
+            <input type="text" name="loginUser" id="loginUser" placeholder=" "> 
             <label for="loginUser">User Name</label>
         </div>
         <div class="input-group">
-            <input type="password" name="loginPassword" id="loginPassword"> 
+            <input type="password" name="loginPassword" id="loginPassword" placeholder=" "> 
             <label for="loginPassword">Password</label>
         </div>
         <input type="submit" value="Login" class="submit-btn">
@@ -29,12 +34,15 @@
             <a href="#" class="close">&times;</a>
             <h2>Reset Password</h2>
             <div class="input-group">
-                <input type="email" name="email" id="email"> 
+                <input type="email" name="email" id="email" placeholder=" "> 
                 <label for="email">Email</label>
             </div>
             <input type="submit" value="Submit" class="submit-btn">
         </form>
     </div>
  </div>   
+
+ <!-- Link to our JavaScript logic file -->
+ <script src="script.js"></script>
 </body>
 </html>
